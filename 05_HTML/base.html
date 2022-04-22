@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+<table width="700">
+<col width="50%">
+    <tr>
+        <td valign="top"><b>Простая форма поиска с вариантами:</b><br><br>
+            <form name="simple1" method="post" action="http://fe.it-academy.by/TestForm.php">
+                <fieldset>
+                    <legend>Строка поиска</legend>
+                    <input type="text" maxlength="10" placeholder="Длина не более 10 символов">
+                    <input type="submit" value="Искать"><br>
+                    <label><input type="radio" name="radio" id="radio1">на сайте</label> 
+                    <label><input type="radio" name="radio" id="radio2">в googlе</label>
+                    <!--Длина запроса не более 10 символов-->
+                </fieldset>
+            </form>
+        </td>
+        <td valign="top"><b>Простая форма поиска с вариантами:</b><br><br>
+            <form name="simple2" method="post" action="http://fe.it-academy.by/TestForm.php">
+                <fieldset>
+                    <legend>Строка поиска</legend>
+                    <input type="text" autofocus required placeholder="Это обязательное поле">
+                    <input type="submit" value="Искать"><br>
+                    <label><input type="radio" name="radio1" id="radio2">на сайте</label> 
+                    <label><input type="radio" name="radio1" id="radio3">в googlе</label>
+                    <!--обязательное поле ввода-->
+                    <!--Автофокус в поле поиска-->
+                </fieldset>
+            </form>
+        </td>
+    </tr>
+    <tr>
+        <td valign="top"><b>Простая форма авторизации:</b><br><br>
+            <form name="simple3" method="post" action="http://fe.it-academy.by/TestForm.php">
+                <fieldset>
+                    <legend>Авторизируйтесь</legend>
+                    <label><input type="text" required placeholder="Это обязательное поле": 20px> Логин</label>
+                    <label><input type="text" required placeholder="Это обязательное поле" > Пароль</label><br>
+                    <label><input type="checkbox" name="autorize" id="au">Оставаться в системе</label><br> 
+                    <input type="submit" value="Войти">
+                    <!--обязательное поле Логин-->
+                </fieldset>
+            </form>
+        </td> 
+        <td valign="top"><b>Опрос(голосование):</b><br><br>
+            <form name="poll" method="post" action="http://fe.it-academy.by/TestForm.php">
+                <fieldset>
+                    <legend>Как вам?</legend>
+                    <label><input type="radio" name="poll" id="poll1">ничего</label><br>
+                    <label><input type="radio" name="poll" id="poll2">неплохо</label><br>
+                    <label><input type="radio" name="poll" id="poll3">хорошо</label><br>
+                    <label><input type="radio" name="poll" id="poll4">супер</label><br>
+                    <input type="radio" name="date_voite" value="2013.12.31" hidden>
+                    <input type="submit" value="Отправить">
+                    <!--Есть скрытое поле name=date_voite, value="2013.12.31"-->
+                </fieldset>
+            </form>
+        </td>
+    </tr>
+    <tr>
+        <td valign="top"><b>Отзыв:</b><br><br>
+            <form name="feedback" method="post" action="http://fe.it-academy.by/TestForm.php">
+                <fieldset>
+                    <legend>Оставьте Ваш отзыв</legend>
+                    <label><input type="text" required placeholder="Это обязательное поле"> Имя</label>
+                    <label><input type="email" required placeholder="Это обязательное поле"
+                    pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$"> e-mail</label><br> 
+                    <textarea>Форма отправки</textarea> <br>
+                    <input type="submit" value="Отправить">
+                    <!--обязательное поле Имя и e-mail
+                    поле email - с проверкой 
+                    метод POST-->
+                </fieldset>
+            </form>
+        </td>
+        <td valign="top"><b>Выпадающий и мульти списки:</b><br><br>
+            <form name="lists" method="post" action="http://fe.it-academy.by/TestForm.php">
+                <fieldset>
+                    <legend>Города РБ</legend>
+                    <select name ="list" id="list1">
+                        <option value="1">Брест</option>
+                        <option value="2">Минск</option>
+                        <option value="3">Витебск</option>
+                    </select>
+                    <select name ="list_multi" multiple id="list2" size="8">
+                        <optgroup label="Города РБ"> 
+                            <option value="2_1">Брест</option>
+                            <option value="2_1">Минск</option>
+                            <option value="2_3">Витебск</option>
+                        </optgroup>
+                        <optgroup label="Города России">
+                            <option value="2_4">Москва</option>
+                            <option value="2_5">Рязань</option>
+                            <option value="2_6">Магадан</option>
+                        </optgroup>
+                    </select>
+                    <input type="submit" value="Ок">
+                </fieldset>
+            </form>
+        </td>
+    </tr>
+    <tr>
+        <td valign="top"><b>Загрузка файла на сервер:</b><br><br>
+            <form name="upload" method="post" action="http://fe.it-academy.by/TestForm.php" enctype="multipart/form-data">
+                <fieldset>
+                    <legend>Upload</legend>
+                    Файл: <!--Не оборачивать тегом р - ок? вписан в fieldset? с p большие отступы-->
+                    <input type="file" name="file"><br>
+                    Срок хранения (года):
+                    <input type="text">
+                    <input type="submit" value="загрузить"><br>
+                    <!--Метод POST
+                    В теге form используйте атрибут
+                    enctype="multipart/form-data" для отправки файла на сервер-->
+                </fieldset>
+            </form>
+        <td valign="top"><b>Валидация данных HTML5:</b><br><br>
+            <form name="valid" method="post" action="http://fe.it-academy.by/TestForm.php">
+                <fieldset>
+                    <legend>Строка поиска</legend>
+                    <input type="text" pattern="/^[а-я]+$/iu', $text" placeholder="Только русские буквы"><br>
+                    <input type="text" pattern="^\d{3}-\d{2}-\d{4}$|^\d{2}-\d{7}$"><br>                         
+                    <input type="submit" value="Проверить">
+                    <!--Телефонный номер в формате 
+                    +ХХХ-ХХ-ХХХХХХХ, где Х - любое число-->
+                </fieldset>
+            </form>
+        </td>
+    </tr>
+ </table>
+
+</body>
+</html>
