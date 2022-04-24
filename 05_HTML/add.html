@@ -22,24 +22,24 @@
             <legend>Дата рождения</legend>
             <input type="text" size="4" maxlength="4" placeholder="2000" pattern="[0-9]{4}"><br>
             <select name ="month" id="list1">
-                <option value="1">Январь</option>
-                <option value="2">Февраль</option>
-                <option value="3">Март</option>
-                <option value="4">Апрель</option>
-                <option value="5">Май</option>
-                <option value="6">Июнь</option>
-                <option value="7">Июль</option>
-                <option value="8">Август</option>
-                <option value="9">Сентябрь</option>
-                <option value="10">Октябрь</option>
-                <option value="11">Ноябрь</option>
-                <option value="12">Декабрь</option>
+                <option value="January">Январь</option>
+                <option value="February">Февраль</option>
+                <option value="March">Март</option>
+                <option value="April">Апрель</option>
+                <option value="May">Май</option>
+                <option value="June">Июнь</option>
+                <option value="July">Июль</option>
+                <option value="August">Август</option>
+                <option value="September">Сентябрь</option>
+                <option value="October">Октябрь</option>
+                <option value="November">Ноябрь</option>
+                <option value="December">Декабрь</option>
             </select><br>
             <input type="number" min="1" max="31"> 
         </fieldset>
         <select name ="nation" id="list2" required>
-            <option value="2.1">РБ</option>
-            <option value="2.2">РФ</option>
+            <option value="Belarus">РБ</option>
+            <option value="Russia">РФ</option>
         </select><br>
         Адрес:<br>
         <textarea name="address" id="address" cols="30" rows="2"> </textarea>
@@ -49,10 +49,10 @@
         <legend>Интересы</legend>
         <fieldset>
             <legend>Хобби</legend>
-            <label><input type="checkbox" name="check1">Рыбалка</label><br>
-            <label><input type="checkbox" name="check2">Астрономия</label><br>
-            <label><input type="checkbox" name="check3">Дайвинг</label><br>
-            <label><input type="checkbox" name="check4">Марки</label>
+            <label><input type="checkbox" name="hobby" value="fishing">Рыбалка</label><br>
+            <label><input type="checkbox" name="hobby" value="astronomy">Астрономия</label><br>
+            <label><input type="checkbox" name="hobby" value="diving">Дайвинг</label><br>
+            <label><input type="checkbox" name="hobby" value="stamps">Марки</label>
         </fieldset>
     </fieldset>
 
@@ -60,19 +60,19 @@
         <legend>Домашние животные</legend>
         <select multiple name ="multi" id="list3" size="12">
             <optgroup label="Попугаи"> 
-                <option value="21">Волнистый</option>
-                <option value="22">Ара</option>
-                <option value="23">Неразлучник</option>
+                <option value="parrot1">Волнистый</option>
+                <option value="parrot2">Ара</option>
+                <option value="parrot3">Неразлучник</option>
             </optgroup>
             <optgroup label="Рыба">
-                <option value="2_4">Караси</option>
-                <option value="2_5">Окуни</option>
-                <option value="2_6">Осётр</option>
+                <option value="fish1">Караси</option>
+                <option value="fish2">Окуни</option>
+                <option value="fish3">Осётр</option>
             </optgroup>
             <optgroup label="Птицы">
-                <option value="2_4">Стая ворон</option>
-                <option value="2_5">Аист</option>
-                <option value="2_6">Археоптерикс</option>
+                <option value="bird1">Стая ворон</option>
+                <option value="bird2">Аист</option>
+                <option value="bird3">Археоптерикс</option>
             </optgroup>
         </select>
     </fieldset>
