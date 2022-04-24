@@ -15,8 +15,8 @@
                     <legend>Строка поиска</legend>
                     <input type="text" maxlength="10" placeholder="Длина не более 10 символов">
                     <input type="submit" value="Искать"><br>
-                    <label><input type="radio" name="radio" id="radio1">на сайте</label> 
-                    <label><input type="radio" name="radio" id="radio2">в googlе</label>
+                    <label><input type="radio" name="radio" value="site" id="radio1">на сайте</label> 
+                    <label><input type="radio" name="radio" value="google" id="radio2">в googlе</label>
                     <!--Длина запроса не более 10 символов-->
                 </fieldset>
             </form>
@@ -27,8 +27,8 @@
                     <legend>Строка поиска</legend>
                     <input type="text" autofocus required placeholder="Это обязательное поле">
                     <input type="submit" value="Искать"><br>
-                    <label><input type="radio" name="radio1" id="radio2">на сайте</label> 
-                    <label><input type="radio" name="radio1" id="radio3">в googlе</label>
+                    <label><input type="radio" name="radio1" value="site1" id="radio3">на сайте</label> 
+                    <label><input type="radio" name="radio1" value="google1" id="radio4">в googlе</label>
                     <!--обязательное поле ввода-->
                     <!--Автофокус в поле поиска-->
                 </fieldset>
@@ -41,7 +41,7 @@
                 <fieldset>
                     <legend>Авторизируйтесь</legend>
                     <label><input type="text" required placeholder="Это обязательное поле": 20px> Логин</label>
-                    <label><input type="text" required placeholder="Это обязательное поле" > Пароль</label><br>
+                    <label><input type="password" required placeholder="Это обязательное поле" > Пароль</label><br>
                     <label><input type="checkbox" name="autorize" id="au">Оставаться в системе</label><br> 
                     <input type="submit" value="Войти">
                     <!--обязательное поле Логин-->
@@ -52,13 +52,18 @@
             <form name="poll" method="post" action="http://fe.it-academy.by/TestForm.php">
                 <fieldset>
                     <legend>Как вам?</legend>
-                    <label><input type="radio" name="poll" id="poll1">ничего</label><br>
-                    <label><input type="radio" name="poll" id="poll2">неплохо</label><br>
-                    <label><input type="radio" name="poll" id="poll3">хорошо</label><br>
-                    <label><input type="radio" name="poll" id="poll4">супер</label><br>
+                    <label><input type="radio" name="poll" value="poll1" id="poll1">ничего</label><br>
+                    <label><input type="radio" name="poll" value="poll2" id="poll2">неплохо</label><br>
+                    <label><input type="radio" name="poll" value="poll3" id="poll3">хорошо</label><br>
+                    <label><input type="radio" name="poll" value="poll4" id="poll4">супер</label><br>
                     <input type="radio" name="date_voite" value="2013.12.31" hidden>
                     <input type="submit" value="Отправить">
                     <!--Есть скрытое поле name=date_voite, value="2013.12.31"-->
+                    <!-- ИТОГ В ФОРМЕ:
+                    Данные, полученные методом POST:
+                    Элемент формы: poll (из name), значение: poll3 (из value); // если без value: "значение: on")-->
+                    <!--    1 .id нужен, если хотим сослаться в коде, для вывода формы не обязателен. id всегда разный.
+                            2. value лучше указывать, чтобы было понятно для backend-->
                 </fieldset>
             </form>
         </td>
@@ -84,20 +89,20 @@
                 <fieldset>
                     <legend>Города РБ</legend>
                     <select name ="list" id="list1">
-                        <option value="1">Брест</option>
-                        <option value="2">Минск</option>
-                        <option value="3">Витебск</option>
+                        <option value="Brest">Брест</option>
+                        <option value="Minsk">Минск</option>
+                        <option value="Vitebsk">Витебск</option>
                     </select>
                     <select name ="list_multi" multiple id="list2" size="8">
                         <optgroup label="Города РБ"> 
-                            <option value="2_1">Брест</option>
-                            <option value="2_1">Минск</option>
-                            <option value="2_3">Витебск</option>
+                            <option value="Brest_multi">Брест</option>
+                            <option value="Minsk_multi">Минск</option>
+                            <option value="Vitebsk_multi">Витебск</option>
                         </optgroup>
                         <optgroup label="Города России">
-                            <option value="2_4">Москва</option>
-                            <option value="2_5">Рязань</option>
-                            <option value="2_6">Магадан</option>
+                            <option value="Moskow_multi">Москва</option>
+                            <option value="Ryazan_multi">Рязань</option>
+                            <option value="Magadan_multi">Магадан</option>
                         </optgroup>
                     </select>
                     <input type="submit" value="Ок">
@@ -110,10 +115,10 @@
             <form name="upload" method="post" action="http://fe.it-academy.by/TestForm.php" enctype="multipart/form-data">
                 <fieldset>
                     <legend>Upload</legend>
-                    Файл: <!--Не оборачивать тегом р - ок? вписан в fieldset? с p большие отступы-->
-                    <input type="file" name="file"><br>
-                    Срок хранения (года):
-                    <input type="text">
+                    <label>Файл:
+                    <input type="file" name="file"></label><br>
+                    <label>Срок хранения (года):
+                    <input type="text"></label>
                     <input type="submit" value="загрузить"><br>
                     <!--Метод POST
                     В теге form используйте атрибут
