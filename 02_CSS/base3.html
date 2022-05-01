@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .navigation{
+        width: 15em;
+        background-color:beige;   
+        float: left;
+        }
+        .headline{
+        font-weight: bold;
+        }
+        .articles{
+        background-color:antiquewhite; 
+        margin-bottom: 2em;
+        margin-left: 15em;
+        }
+        .img{
+        background-image: url(letter.png); 
+        background-repeat: no-repeat; 
+        float: right;
+        width: 58px;
+        height: 43px;
+        }
+        .spacer{
+        clear:both;
+        }
+        .wrap{
+        background-color: bisque;
+        }
+        .footer{
+        background-color: antiquewhite;
+        }
+
+    </style>
+</head>
+<body>
+ 
+<div class="wrap"> 
+
+<div class="navigation">
+    <p class="headline">Блок навигации</p>
+    <ul>
+        <li>Ширина 15em</li>
+        <li>Должен присутствовать цвет фона</li>
+        <li>Располагается слева</li>
+        <li>Блок навигации дополните контентом достаточным, чтобы
+            он начинал захватывать вторую строку, как показано в данном примере</li>
+    </ul>
+</div>
+
+<div class="articles">
+    <p class="headline">Статья 1</p>
+    <p>Размер блока:<br>
+        Занимает всю доступную ширину<br>
+        Должен присутствовать цвет фона<br>
+        Во всех "статьях" сделайте отступ снизу от соседей равным .2em, 
+        при помощи свойства margin-bottom.
+    </p>
+</div>
+
+<div class="articles">
+    <p class="headline">Статья 2</p>
+    <p>Размер блока:<br>
+        Занимает всю доступную ширину<br>
+        Должен присутствовать цвет фона<br>
+        Во всех "статьях" сделайте отступ снизу от соседей равным .2em, 
+        при помощи свойства margin-bottom.<br>
+        Картинка вставлена при помощи тега, плавание организовано по правому краю внутри
+        данной статьи для этой картинки.
+</div>
+
+<div class="img"></div>
+
+<div class="spacer"></div>
+
+</div>
+
+
+<div class="footer">
+    Нижний блок, подвал. Занимает всю доступную ширину. Высота определяется помещенным внутрь контентом.
+</div>
+
+</body>
+</html>
