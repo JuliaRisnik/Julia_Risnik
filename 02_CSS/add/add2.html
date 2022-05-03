@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .wrap{
+        background-color: bisque;
+        display:flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        align-content: flex-start;
+        }
+        .navigation{
+        width: 15em;
+        background-color:beige;   
+        }
+        .headline{
+        font-weight: bold;
+        }
+        .articles{
+        background-color:antiquewhite; 
+        display:flex;
+        flex-direction: column;
+        margin-bottom: 2em;
+        }
+        .img{
+        background-image: url(/02_CSS/base/letter.png); /*не показывается*/
+        background-repeat: no-repeat;
+        display:flex;
+        align-self: flex-end;
+        width: 58px;
+        height: 43px;
+        }
+        .footer{
+        background-color: antiquewhite;
+        margin-top: -2em;
+        }
+
+    </style>
+</head>
+<body>
+ 
+<div class="wrap"> 
+
+<div class="navigation">
+    <p class="headline">Блок навигации</p>
+    <ul>
+        <li>Ширина 15em</li>
+        <li>Должен присутствовать цвет фона</li>
+        <li>Располагается слева</li>
+        <li>Блок навигации дополните контентом достаточным, чтобы
+            он начинал захватывать вторую строку, как показано в данном примере</li>
+    </ul>
+</div>
+
+<div>
+<div class="articles">
+    <p class="headline">Статья 1</p>
+    <p>Размер блока:<br>
+        Занимает всю доступную ширину<br>
+        Должен присутствовать цвет фона<br>
+        Во всех "статьях" сделайте отступ снизу от соседей равным .2em, 
+        при помощи свойства margin-bottom.
+    </p>
+</div>
+
+<div class="articles">
+    <p class="headline">Статья 2</p>
+    <p>Размер блока:<br>
+        Занимает всю доступную ширину<br>
+        Должен присутствовать цвет фона<br>
+        Во всех "статьях" сделайте отступ снизу от соседей равным .2em, 
+        при помощи свойства margin-bottom. Картинка вставлена при помощи тега, плавание организовано по правому краю внутри
+        данной статьи для этой картинки.
+
+        <div class="img"></div>
+    </div>
+</div>
+
+
+</div>
+
+<div class="footer">
+    Нижний блок, подвал. Занимает всю доступную ширину. Высота определяется помещенным внутрь контентом.
+</div>
+
+</body>
+</html>
