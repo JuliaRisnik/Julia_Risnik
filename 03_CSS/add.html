@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #slow_nav > ul > li{
+        list-style: none;
+        display: inline-block;  
+        position:relative;
+        cursor: pointer;
+        padding: 0;
+        width: 100px;
+        }
+        #slow_nav > ul > li {
+        background-color:rgb(229, 227, 227); color:gray; 
+        border: 1px solid #12212b; border-radius: 5px; 
+        }
+       #slow_nav li ul{
+        position:absolute;
+        list-style:none;
+        left: 0;
+        margin:0;
+        padding:0;
+    max-height:0px;
+    overflow:hidden;
+    -webkit-transition:max-height 0.4s linear;
+    -moz-transition:max-height 0.4s linear;
+    transition:max-height 0.4s linear
+        }
+        #slow_nav li:hover ul{
+        max-height:200px;
+        }
+        #slow_nav li ul li{
+        width: 100px;
+        background-color:rgb(229, 227, 227); color:rgb(116, 115, 115); 
+        border: 1px solid #12212b; border-radius: 5px; 
+        position:relative;
+        }
+        #slow_nav li ul li a{
+        display:block;
+        }
+        li > a:hover{
+        background-color:rgb(149, 148, 148); color:rgb(244, 239, 239);
+        }
+        @media all and (max-width:700px){
+        #slow_nav { width: 100px; display: flex; flex-direction: column} 
+        #slow_nav li ul{
+        position:absolute;
+        list-style:none;
+        left: 100px;
+        margin-top:-20px;
+        }
+    </style>
+</head>
+<body>
+    <nav id="slow_nav">
+        <ul>
+            <li><a>Понедельник</a>
+                <ul>
+                    <li>Завтрак</li>
+                    <li>Обед</li>
+                    <li>Ужин</li>
+                </ul>
+            </li>
+            <li><a>Вторник</a>
+                <ul>
+                    <li>Завтрак</li>
+                    <li>Обед</li>
+                    <li>Ужин</li>
+                </ul>
+            </li>
+            <li><a>Среда</a>
+                <ul>
+                    <li>Завтрак</li>
+                    <li>Обед</li>
+                    <li>Ужин</li>
+                </ul>
+            </li>
+            <li><a>Четверг</a>
+                <ul>
+                    <li>Завтрак</li>
+                    <li>Обед</li>
+                    <li>Ужин</li>
+                </ul>
+            </li>
+            <li><a>Пятница</a>
+                <ul>
+                    <li>Завтрак</li>
+                    <li>Обед</li>
+                    <li>Ужин</li>
+                </ul>
+            </li>
+            <li><a>Суббота</a>
+                <ul>
+                    <li>Завтрак</li>
+                    <li>Обед</li>
+                    <li>Ужин</li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>
