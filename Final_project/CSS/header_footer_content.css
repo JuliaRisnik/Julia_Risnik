@@ -1,0 +1,67 @@
+/*Верхняя и нижняя шапки*/
+
+.header, .footer {
+    height: 320px;
+    width: 100%;
+    background-color: #CED6CE;
+    font: normal normal normal 32px/1.4em bold,"playfair display",serif;
+}
+svg{
+    fill:#415941;
+    margin-left: 60px;
+}
+.nav{
+    color: #415941;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    position: relative;
+    top: -200px;
+    margin-right: 60px;
+}
+a span:hover{
+    color: black;
+}
+.title{
+    position: relative;
+    top: -135px;
+    margin-left: 200px;
+    color: #334633;
+}
+span {
+    color:#415941;
+    font: optional;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+}
+p{
+    color:#334633;
+    font-weight: 700px;
+    font: bold 30px bold,"playfair display",serif;
+}
+p.title{
+    font-size: 22px;
+}
+.footer p.title{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+.footer .title{
+  top: 0;
+  padding-top: 80px;
+  margin-left: 0;
+}
+.footer span.title{
+    font-weight: lighter;
+    margin-left: 10px;
+}
+
+/*Содержание*/
+
+.content{
+    height: 100%;
+    width: 100%;
+    background-color: #FFF6EB;
+    font: normal normal normal 14px/1.4em 'Nunito', sans-serif;
+}

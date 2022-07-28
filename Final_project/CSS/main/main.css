@@ -1,0 +1,222 @@
+
+
+/*Содержание общее: кнопки и svg*/
+
+.sv { /*svg в параллаксе*/
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    height: 50px;
+    margin-top: -100px;
+}
+.about-text svg{ /*svg в обо мне*/
+    margin-left: -30px;
+    margin-top: -50px;
+}
+.services .sv { /*svg в услугах*/
+    width: 310px;
+    margin-top: 0;
+}
+.services~p~.sv, .contacts .sv{/*svg в услугах и в контактах*/
+    width: 310px;
+    margin-top: -20px;
+}
+
+/*общее построение кнопки*/
+
+.button{
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 50px;
+    background-color: #415941;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.button a{
+    color: white;
+    font: bold 14px/1.4em 'Nunito', sans-serif;
+    vertical-align: middle;
+    text-decoration: none;
+}
+.button:hover{
+    background-color: #334633;
+}
+.button a:hover{
+    color: white;
+}
+
+/*Содержание часть 1 - параллакс*/
+
+.parallax-image{
+    background: url("../../images/main/stone.jpg");  
+    min-height: 700px;
+    width: calc(100% - 120px);
+    position: relative;
+    top: -150px;
+    right: -60px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax-image>p{
+    text-align: center;
+    font-size: 42px;
+    padding-top: 140px;
+}
+.parallax-image span{
+    display: block;
+    margin-top: 120px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/*Содержание часть 2 - обо мне*/
+
+.about{
+    display: flex;
+    margin: -150px 60px 0 60px;
+}
+.about-image{
+    flex: 0 0 510px;
+    width: 510px;
+    height: 500px;
+    background-image: url("../../images/main/person.jpg");
+} 
+.about-text{
+    flex: 1 1 200px;
+    background-color: #CED6CE;
+}
+.subtitle{
+    padding-top: 50px;
+}
+.about-text p{
+    margin-left: 40px;
+}
+.about-text span{
+    display: block;
+    margin: 0 40px 40px 40px;
+}
+.about-text .button{
+    margin: 0 40px 40px 40px;
+}
+
+/*Содержание часть 3 - услуги*/
+
+.services{
+    background-color: #F6E6D2;
+    height: 100%;
+    margin: 0 60px;
+    padding-bottom: 40px;
+}
+.services p{
+    text-align: center;
+    margin-bottom: -5px;
+}
+.d-block {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50% !important;
+    max-width: 550px !important;
+}
+.carousel-caption{
+    width: 250px;
+    height: 120px;
+    background-color: #CED6CE;
+}
+.carousel-caption span{
+    font-size: 26px;
+    line-height: 1.0 !important;
+}
+.carousel-caption .button{
+    margin-top: 20px;
+}
+.services~p{
+    text-align: center;
+}
+
+/*Содержание часть 4 - отзывы*/
+
+.testimonials{
+    display: flex;
+    margin: 0 60px;
+}
+.testimonials > div{
+    flex: 1 1 250px;
+    padding-right: 10px;
+}
+.quotes{
+    margin-left: -60px;
+}
+
+/*Содержание часть 5 - контакты*/
+
+.contacts{
+    background-color: #F6E6D2;
+    padding: 150px 100px 130px 100px;
+    position: relative;
+    bottom: -100px;
+    right: -60px;
+    width: calc(100% - 120px);
+}
+.contacts p{
+    text-align: center;
+}
+.contacts span{
+    display: block;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+form{
+    background-color: #FFF6EB;
+    margin-top: -20px;
+    padding: 50px 0;
+}
+.call{
+    background-color:#CED6CE;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -80px;
+}
+textarea, [type=email], [type=text]{
+    width: 100%;
+    background-color: #FFF6EB;
+    border: none;
+    border-bottom: solid #415941 1px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+textarea:hover, [type=email]:hover, [type=text]:hover{
+    border-bottom: solid #415941 2px;
+}
+
+.row{
+    display: inline-block;
+}
+label, .form{
+    color:#415941;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+}
+[type=submit]{
+    background-color: #415941;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+[type=submit]:hover{
+    background-color: #334633;
+}

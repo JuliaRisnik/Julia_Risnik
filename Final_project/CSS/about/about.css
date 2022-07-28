@@ -1,0 +1,90 @@
+.footer{
+    margin-top: -200px;
+}
+
+.wrap{
+    background-color: #F6E6D2;
+    width: calc(100% - 120px);
+    position: relative;
+    top: -150px;
+    right: -60px;
+    padding-bottom: 50px;
+}
+.wrap p{
+    margin-bottom: 0;
+    text-align: center;
+    padding-top: 50px;
+}
+.sv{
+    text-align: center;
+}
+.sv svg{
+    margin: 0 !important;
+}
+.sv+div{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.photo{
+    width: 660px;
+    height: 499px;
+    min-width: 420px;
+    background-image: url("../../images/about/person.jpg");
+    margin-top: 50px;
+    position: relative;
+    top: -50px;
+    left: 50px;
+}
+.workplace{
+    width: 660px;
+    height: 499px;
+    background-image: url("../../images/about/workplace.jpg");
+    margin-top: 50px;
+    position: relative;
+    top: -50px;
+    left: -50px;
+    padding-bottom: 50px;
+}
+.text{
+    width: 500px;
+    height: 500px;
+    background-color: #CED6CE;  
+    margin-right: 50px;
+    padding: 100px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #334633;
+}
+.next{
+    margin-left: 50px;
+    margin-right: 0;
+    min-width: 450px;
+}
+
+.button{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 150px;
+    height: 50px;
+    background-color:#CED6CE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #334633;
+}
+.button a{
+    color:#334633;
+    font: normal 14px/1.4em 'Nunito', sans-serif;
+    vertical-align: middle;
+    text-decoration: none;
+}
+.button:hover{
+    background-color: #334633;
+}
+.button:hover > a{
+    color: white;
+}

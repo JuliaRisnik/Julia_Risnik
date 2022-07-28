@@ -1,0 +1,64 @@
+.checkup{
+    background-color: white;
+    margin: 50px 80px;
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    position: relative;
+    margin-top: 0px;
+    top: 50px;
+}
+.order{
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    margin: 40px 50px 0 50px;
+    font-size: 24px !important;
+    font-weight: bold;
+}
+.pay{
+    grid-column: 1;
+    grid-row: 2;
+    padding: 0 50px;
+}
+.check{
+    grid-column: 2;
+    grid-row: 2 / span 3;
+    padding: 50px 30px;
+    margin: 25px 50px 25px 0;
+    border: solid rgb(168, 166, 166) 1px;
+}
+.contact{
+    grid-column: 1;
+    grid-row: 3;
+    padding: 0 50px 50px 50px;
+}
+.contact .button{
+    display: inline-block;
+}
+.d{
+    text-align: center;
+}
+.d .button{
+    background-color: rgb(115, 114, 114);
+    width: 170px;
+    border-radius: 5%;
+}
+.d .button:hover{
+    background-color: rgb(98, 96, 96);
+}
+.button a{
+    position: relative;
+    top: 8px;
+}
+span.titles{
+    font-size: 20px;
+    color: black;
+    text-align: left;
+    padding-bottom: 10px;
+}
+.wrap div{
+    font-size: 16px;
+    line-height: 1.5;;
+}
+.titles.total{
+    font-size: 19px;
+}

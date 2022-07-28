@@ -1,0 +1,74 @@
+.footer{
+    margin-top: -150px;
+}
+.wrap{
+    background-color: #FFF6EB;
+    width: calc(100% - 120px);
+    position: relative;
+    top: -150px;
+    right: -60px;
+    padding-bottom: 50px;
+}
+.wrap p{
+    margin-bottom: 0;
+    text-align: center;
+    padding-top: 50px;
+}
+.sv{
+    text-align: center;
+}
+.sv svg{
+    margin-left: 0 !important;
+    margin-bottom: 50px;
+}
+.wrap span{
+    text-align: center;
+    display: block;
+}
+.row{
+    grid-row-gap: 25px;
+    padding: 50px;
+}
+.card, .card-img-top{
+    border-radius: 0 !important;
+}
+.card{
+    border: solid #415941 1px !important;
+}
+.card-body{
+    background-color: #FFF6EB;
+}
+.wrap p.card-title{
+    font-size: 22px;
+    padding: 0;
+}
+
+.button{
+    margin-left: auto;
+    margin-right: auto;
+    width: 140px;
+    height: 40px;
+    background-color: #415941;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.button a{
+    color: white;
+    font: bold 14px/1.4em 'Nunito', sans-serif;
+    vertical-align: middle;
+    text-decoration: none;
+}
+.button:hover{
+    background-color: #334633;
+}
+.button a:hover{
+    color: white;
+}
+.card a{
+    text-decoration: none !important;
+}
+.card>a:hover, .card-body>a:hover{
+    opacity: calc(0.5);
+}
