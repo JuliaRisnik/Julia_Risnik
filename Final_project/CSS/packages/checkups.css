@@ -49,6 +49,19 @@
     position: relative;
     top: 8px;
 }
+@keyframes AnimationOfColor
+{
+    from { background-color:  #c0bfbc; }
+    to { background-color: rgb(115, 107, 107); }
+}
+
+.d .button .active{
+    animation-direction: alternate;
+	animation-duration: 2s;
+	animation-name: AnimationOfColor;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
 span.titles{
     font-size: 20px;
     color: black;

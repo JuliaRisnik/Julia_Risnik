@@ -10,6 +10,10 @@ svg{
     fill:#415941;
     margin-left: 60px;
 }
+.header svg:hover{
+    transform: scale(1.2); 
+    transition: 1s; 
+}
 .nav{
     color: #415941;
     font-family: 'Nunito', sans-serif;
