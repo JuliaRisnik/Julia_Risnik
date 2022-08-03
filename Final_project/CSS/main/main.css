@@ -2,24 +2,24 @@
 
 /*Содержание общее: кнопки и svg*/
 
-.sv { /*svg в параллаксе*/
+.parallax-image .sv { /*svg в параллаксе*/
     margin-left: auto;
     margin-right: auto;
-    width: 600px;
+    width: 450px;
     height: 50px;
     margin-top: -100px;
 }
-.about-text svg{ /*svg в обо мне*/
-    margin-left: -30px;
-    margin-top: -50px;
+.sv{
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
 }
-.services .sv { /*svg в услугах*/
-    width: 310px;
-    margin-top: 0;
+svg{
+    margin-left: 0 !important;
+    padding-top: 10px;
 }
-.services~p~.sv, .contacts .sv{/*svg в услугах и в контактах*/
-    width: 310px;
-    margin-top: -20px;
+.about .sv{ /*svg в обо мне*/
+    margin-left: -10px;
 }
 
 /*общее построение кнопки*/
@@ -78,7 +78,8 @@
 
 .about{
     display: flex;
-    margin: -150px 60px 0 60px;
+    padding: 0 60px;
+    margin-top: -150px;
 }
 .about-image{
     flex: 0 0 510px;
@@ -92,6 +93,8 @@
 }
 .subtitle{
     padding-top: 50px;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 .about-text p{
     margin-left: 40px;
@@ -149,7 +152,7 @@
     padding-right: 10px;
 }
 .quotes{
-    margin-left: -60px;
+    padding-left: 0;
 }
 
 /*Содержание часть 5 - контакты*/
@@ -219,4 +222,17 @@ label, .form{
 }
 [type=submit]:hover{
     background-color: #334633;
+}
+
+@media all and (max-width:970px){
+    .parallax-image .sv{display: none;}
+    .about{flex-direction: column;}
+    .about-image{width: 100%}
+    .about-text .button{margin-left: auto; margin-right: auto;}
+    .about-text .subtitle{margin: 0; text-align: center; }
+    .about-text .sv {width: 200px; margin-top: -20px; }
+    .about .sv {margin-left: auto;}
+    .about-text span {margin: 10px 40px 40px 40px;}
+    .about-text svg {margin-left: -10px; margin-top: 20px;}
+    .contacts{padding: 80px 40px 50px 40px}
 }

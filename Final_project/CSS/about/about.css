@@ -50,6 +50,7 @@
 .text{
     width: 500px;
     height: 500px;
+    min-height: 442px;
     background-color: #CED6CE;  
     margin-right: 50px;
     padding: 100px;
@@ -87,4 +88,14 @@
 }
 .button:hover > a{
     color: white;
+}
+
+@media all and (max-width:970px){
+    .sv+div{flex-direction: column;}
+    div.second{flex-direction: column-reverse;}
+    .photo, .workplace{margin-top: 0; margin-left: auto; margin-right: auto;
+            top: 0; left: 0; width: 420px; min-width: none;}
+    .text, .text.next{width:420px; margin-left: auto; margin-right: auto; 
+            padding: 100px 50px;}
+    .next{min-width: 420px;}
 }

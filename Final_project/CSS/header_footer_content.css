@@ -1,3 +1,11 @@
+/*Ограничение максимальной ширины*/
+
+.header, .footer, .content {
+    max-width: 1650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /*Верхняя и нижняя шапки*/
 
 .header, .footer {
