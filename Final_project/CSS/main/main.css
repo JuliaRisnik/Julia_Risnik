@@ -18,6 +18,9 @@ svg{
     margin-left: 0 !important;
     padding-top: 10px;
 }
+.header svg{
+    margin-left: 60px !important;
+}
 .about .sv{ /*svg в обо мне*/
     margin-left: -10px;
 }
@@ -235,4 +238,14 @@ label, .form{
     .about-text span {margin: 10px 40px 40px 40px;}
     .about-text svg {margin-left: -10px; margin-top: 20px;}
     .contacts{padding: 80px 40px 50px 40px}
+}
+@media all and (max-width:560px){
+    .parallax-image{position: relative;top: 0;right: 0; width: 100%;}
+    .contacts{right: 0; bottom: 0; width: 100%;}
+    .testimonials{flex-direction: column; margin: 0 30px;}
+    .services{margin: 0;}
+    .d-block{width: 70%!important;}
+    .carousel-item.button{position: absolute; top: -30px;}
+    .about{padding: 0; margin-top: 0;}
+    
 }

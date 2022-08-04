@@ -72,3 +72,10 @@
 .card>a:hover, .card-body>a:hover{
     opacity: calc(0.5);
 }
+@media all and (max-width:560px){
+    .wrap{top: 0;right: 0; width: 100%; padding:0;}
+    .footer{margin: 0;}
+    .row{margin: 0 !important; padding: 30px}
+    .wrap.span{margin: 0 10px;}
+    .sv {height: 40px;}
+}

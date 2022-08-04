@@ -74,4 +74,9 @@ img{
     .insider{margin-left: 50px; margin-right: 50px;}
     .infotext span {margin: 50px;}
     .infotext img {width: 420px;}
-    }
+}
+    @media all and (max-width:560px){
+    .wrap{width: 100%; top: 0; right: 0;}
+    .infotext img {width: 100%; padding: 10px;}
+    .footer {margin-top: 0;}
+}

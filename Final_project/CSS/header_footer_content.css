@@ -69,6 +69,28 @@ p.title{
     margin-left: 10px;
 }
 
+/*Скрытое на больших устройствах меню*/
+
+button.btn.btn-primary{
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    display: none;
+    background-color: #CED6CE;
+    font-size: 30px;
+    line-height: 0.4;
+    color: #334633;
+    border: none;
+}
+button.btn.btn-primary:hover, button.btn.btn-primary:visited, button.btn.btn-primary:active{
+    border:#334633 solid 2px;
+}
+#offcanvasRight{
+    background-color: #CED6CE;
+}
+.offcanvas-body a.nav-link{
+    text-align: center;
+}
 /*Содержание*/
 
 .content{
@@ -76,4 +98,19 @@ p.title{
     width: 100%;
     background-color: #FFF6EB;
     font: normal normal normal 14px/1.4em 'Nunito', sans-serif;
+}
+
+@media all and (max-width:560px){
+    ul.nav.justify-content-end{display: none;} /*скрывается навигацию для большого и среднего размера*/
+    button.btn.btn-primary{display: block;}/*добавляется навигацию для малого размера*/
+    
+    .header, .footer {height: 120px;} /*изменяется расположение svg и заголовка*/
+    .header svg{margin-left: 10px !important;
+                position:absolute; top: -40px; padding-top: 10px!important}
+    .header p.title{position: absolute;top: 20px;left: -45px;}
+    .header span.title{position: absolute;top: 80px;left: -45px;}
+   
+    .footer>.title{flex-direction: column;} /*изменяется расположение текста в "подвальной" части*/
+    .footer p.title {padding: 10px; align-items: flex-start;}
+    .footer span.title{margin: 0; padding: 0; align-items: flex-start;}
 }
