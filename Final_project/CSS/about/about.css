@@ -28,24 +28,21 @@
     align-items: flex-end;
 }
 .photo{
-    width: 660px;
-    height: 499px;
     min-width: 420px;
     background-image: url("../../images/about/person.jpg");
-    margin-top: 50px;
-    position: relative;
-    top: -50px;
     left: 50px;
 }
 .workplace{
+    background-image: url("../../images/about/workplace.jpg");
+    left: -50px;
+    padding-bottom: 50px;
+}
+.photo, .workplace{
     width: 660px;
     height: 499px;
-    background-image: url("../../images/about/workplace.jpg");
     margin-top: 50px;
     position: relative;
     top: -50px;
-    left: -50px;
-    padding-bottom: 50px;
 }
 .text{
     width: 500px;
@@ -96,6 +93,20 @@
     .photo, .workplace{margin-top: 0; margin-left: auto; margin-right: auto;
             top: 0; left: 0; width: 420px; min-width: none;}
     .text, .text.next{width:420px; margin-left: auto; margin-right: auto; 
-            padding: 100px 50px;}
+            padding: 100px 50px; height: 350px;}
     .next{min-width: 420px;}
+}
+@media all and (max-width:560px){
+    .wrap{width: 100%; top: 0; right: 0; padding-top: 50px;}
+    .footer {margin-top: 0;}
+    .photo {margin-right: 30px; margin-left: 10px; width: calc(100% - 40px);height: 450px;}
+    .workplace {margin-right: 10px; margin-left: 30px; width: calc(100% - 40px); height: 450px;}
+    .text {margin-right: 10px; margin-left: 30px; width: calc(100% - 40px);
+            padding: 80px 40px 0 40px; height: 100%;min-width: 315px; 
+            position: relative; top: -50px;}
+    .text.next{margin-right: 30px; margin-left: 10px; width: calc(100% - 40px);
+            padding: 80px 40px 0 40px; height: 100%;min-width: 315px; 
+            position: relative; top: -50px;}
+    .wrap p{padding: 0;}
+    .button{margin-top: 0;}
 }
