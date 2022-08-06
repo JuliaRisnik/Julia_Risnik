@@ -50,6 +50,9 @@ svg{
 .button a:hover{
     color: white;
 }
+.button{
+    position: relative;
+}
 
 /*Содержание часть 1 - параллакс*/
 
@@ -132,13 +135,11 @@ svg{
     width: 250px;
     height: 120px;
     background-color: #CED6CE;
+    padding-top: 30px !important;
 }
 .carousel-caption span{
     font-size: 26px;
     line-height: 1.0 !important;
-}
-.carousel-caption .button{
-    margin-top: 20px;
 }
 .services~p{
     text-align: center;
@@ -230,7 +231,8 @@ label, .form{
 @media all and (max-width:970px){
     .parallax-image .sv{display: none;}
     .about{flex-direction: column;}
-    .about-image{width: 100%}
+    .about-image-wrap{background-image: url(../../images/main/personwrap.jpg); background-repeat: repeat-x;}
+    .about-image{width: 100%; background-repeat: no-repeat;}
     .about-text .button{margin-left: auto; margin-right: auto;}
     .about-text .subtitle{margin: 0; text-align: center; }
     .about-text .sv {width: 200px; margin-top: -20px; }
